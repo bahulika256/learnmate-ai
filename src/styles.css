@@ -1,2 +1,256 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172033;background:#f7f8fc;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-width:320px}.screen-center{min-height:100vh;display:grid;place-items:center;color:#4f46e5}.page{padding:28px;max-width:1280px;margin:auto}.card{background:white;border:1px solid #e8eaf1;border-radius:20px;box-shadow:0 10px 30px rgba(31,41,55,.06)}.btn{border:0;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px}.btn-primary{background:#4f46e5;color:white}.btn-soft{background:#eef2ff;color:#4338ca}.btn-ghost{background:transparent;color:#475569}.input{width:100%;border:1px solid #dfe3eb;border-radius:12px;padding:12px 14px;outline:none;background:white}.input:focus{border-color:#6366f1;box-shadow:0 0 0 3px #e0e7ff}.muted{color:#64748b}.gradient{background:linear-gradient(135deg,#eef2ff,#faf5ff)}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f7f8fc;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7f8fc;
+}
+
+.screen-center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #4f46e5;
+}
+
+.page {
+  padding: 28px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8eaf1;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.06);
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 11px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-soft {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #475569;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #dfe3eb;
+  border-radius: 12px;
+  padding: 12px 14px;
+  outline: none;
+  background: white;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px #e0e7ff;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #eef2ff, #faf5ff);
+}
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+.dark,
+.dark body {
+  color: #e5e7eb;
+  background: #0f172a;
+}
+
+.dark body {
+  background: #0f172a;
+}
+
+.dark .min-h-screen.bg-slate-50,
+.dark .bg-slate-50 {
+  background: #0f172a !important;
+}
+
+.dark .bg-white {
+  background: #1e293b !important;
+}
+
+.dark .card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.dark .input {
+  background: #0f172a;
+  color: #e5e7eb;
+  border-color: #475569;
+}
+
+.dark .input:focus {
+  border-color: #818cf8;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.dark .muted {
+  color: #94a3b8;
+}
+
+.dark .btn-ghost {
+  color: #cbd5e1;
+}
+
+.dark .btn-soft {
+  background: #312e81;
+  color: #e0e7ff;
+}
+
+.dark .gradient {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+}
+
+/* Text colors used throughout the application */
+.dark .text-slate-900,
+.dark .text-slate-800,
+.dark .text-slate-700 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-600,
+.dark .text-slate-500 {
+  color: #cbd5e1 !important;
+}
+
+.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Borders */
+.dark .border-slate-200,
+.dark .border-slate-100 {
+  border-color: #334155 !important;
+}
+
+/* Light backgrounds */
+.dark .bg-slate-100 {
+  background: #334155 !important;
+}
+
+.dark .bg-slate-50 {
+  background: #0f172a !important;
+}
+
+.dark .bg-indigo-50 {
+  background: #312e81 !important;
+}
+
+.dark .text-indigo-700,
+.dark .text-indigo-600 {
+  color: #a5b4fc !important;
+}
+
+/* Profile / achievement cards */
+.dark .bg-amber-50 {
+  background: #422006 !important;
+}
+
+.dark .bg-red-50 {
+  background: #450a0a !important;
+}
+
+.dark .text-red-700 {
+  color: #fca5a5 !important;
+}
+
+/* Select dropdowns */
+.dark select {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* General headings and labels */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark label {
+  color: #f1f5f9;
+}
+
+/* Links */
+.dark a {
+  color: #c7d2fe;
+}
+
+/* Sidebar */
+.dark aside {
+  background: #111827 !important;
+  border-color: #334155 !important;
+}
+
+/* Sidebar hover */
+.dark .hover\:bg-slate-50:hover {
+  background: #1e293b !important;
+}
+
+/* Mobile navigation overlay */
+.dark .bg-black\/20 {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+/* Tables */
+.dark table {
+  color: #e5e7eb;
+}
+
+.dark th {
+  color: #f1f5f9;
+}
+
+.dark td {
+  color: #cbd5e1;
+}
+
+/* Placeholder text */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b;
+}
