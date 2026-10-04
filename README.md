@@ -1,4 +1,5 @@
 # LearnMate AI — Your Personal AI Teacher
+🌐 **Live Demo:** https://learnmate-ai-nu.vercel.app
 
 LearnMate AI is a full-stack school-learning companion built around React + TypeScript + Vite, Supabase and Gemini. It supports authenticated student profiles, onboarding, AI tutoring, image attachments, quizzes, progress, recommendations, streaks/XP, history, profile/settings and multilingual/voice browser features.
 
